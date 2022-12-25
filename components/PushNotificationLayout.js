@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
 import firebase from "firebase/app";
 import "firebase/messaging";
+import Page from "./Page";
 
 function PushNotificationLayout({ children }) {
 
@@ -58,6 +59,7 @@ function PushNotificationLayout({ children }) {
     <>
       <ToastContainer />
       {children}
+      <Page/>
     </>
   );
 }
